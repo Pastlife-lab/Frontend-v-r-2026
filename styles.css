@@ -122,25 +122,33 @@ min-height: 100vh;
 
 .sidebar > section{
     background-color: white;
-    border-radius: 3%;
+    border-radius: 8px;
     padding: 2%;
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.15); */
+}
+
+.sidebar h4{
+    margin: 0em 0 0em 0;
 }
 
 .speakers{
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 4%;
+    margin-top: 1em;
 }
 
 .speakers div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4px;
+    font-size: 0.8em;
 }
 .speakers img{
     background-color: black;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
 }
 
