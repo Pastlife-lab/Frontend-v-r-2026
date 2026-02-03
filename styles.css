@@ -124,7 +124,7 @@ min-height: 100vh;
     background-color: white;
     border-radius: 8px;
     padding: 2%;
-    /* box-shadow: 0 4px 10px rgba(0,0,0,0.15); */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .sidebar h4{
