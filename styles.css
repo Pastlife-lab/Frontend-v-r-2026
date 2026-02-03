@@ -14,7 +14,8 @@ html, body {
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid #e0e0e0;
-        }
+    flex-direction: column;   
+}
     
     div#Logo {
         display: grid;
@@ -27,8 +28,11 @@ html, body {
         list-style-type: none;
         align-items: flex-end;
         justify-content: flex-end;
+        grid-column-end: auto;
         
     }
+    
+    
     nav {
         width: 100%;
         display: flex;
@@ -99,18 +103,18 @@ min-height: 100vh;
 
 
 
-    @media (max-width: 480px){
+    @media (max-width: 360px){  /* Mobile */
         nav ul {
             display: flex;
         }
     }
-    @media (min-width:481px) and (max-width:1024px){
+    @media screen and (min-width: 768px){  /* Tablet */
         nav ul {
             display: flex;
             gap: 10px;
         }
     }
-    @media (min-width:1025px){
+    @media screen and  (min-width:1024px){  /* Desktop */
         nav ul {
             display: flex;
             gap: 20px;
