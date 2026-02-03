@@ -80,7 +80,7 @@ min-height: 100vh;
 
     @media (max-width: 480px){
         nav ul {
-            display: none;
+            display: flex;
         }
     }
     @media (min-width:481px) and (max-width:1024px){
