@@ -64,7 +64,7 @@
         grid-area: info;
                 }
     
-    #explation{ 
+    #explation{    /* jobbe med SVG i morgen og fikse så dette ser bedre ut*/
         display: grid;
         align-self: flex-start;
         justify-content: flex-start;
