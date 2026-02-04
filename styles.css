@@ -64,7 +64,7 @@
         grid-area: info;
                 }
     
-    #explation{    /* jobbe med SVG i morgen og fikse så dette ser bedre ut*/
+    #explation{    
         display: grid;
         align-self: flex-start;
         justify-content: flex-start;
@@ -78,6 +78,9 @@
     }
     .info li{
         padding: 2px;
+    }
+    svg{
+        
     }
 
 .content-grid{
