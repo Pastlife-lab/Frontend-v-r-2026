@@ -73,6 +73,12 @@
         
         
     }
+    .info h2{
+        padding-left: 10px;
+    }
+    .info li{
+        padding: 2px;
+    }
 
 .content-grid{
 display: grid;
