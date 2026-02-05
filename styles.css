@@ -87,7 +87,7 @@
         
     }
 
-.content-grid{
+.layout{
 display: grid;
 grid-template-columns: 10fr 12fr;
 grid-template-rows: auto 
@@ -260,6 +260,11 @@ input, select, button {
         nav ul {
             display: flex;
         }
+
+        .speakers{
+            display: flex;
+            flex-direction: column;
+        }
     }
     @media screen and (min-width: 768px){  /* Tablet */
         nav ul {
@@ -271,5 +276,18 @@ input, select, button {
         nav ul {
             display: flex;
             gap: 20px;
+        }
+    }
+
+
+    @media screen and (max-width: 768px){
+        .layout{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .speakers{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
         }
     }
