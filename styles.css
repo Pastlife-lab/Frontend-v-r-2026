@@ -1,3 +1,7 @@
+    :root{
+        --font-stack: Arial, Helvetica, sans-serif;
+    }
+    
     .skip-link {
     position: absolute;
     top: -40px;
@@ -166,7 +170,7 @@ input, select, button {
     flex-direction: column;
     gap: 10px;
     padding: 2%;
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family: var(--font-stack);
 }
 
 .footer{
