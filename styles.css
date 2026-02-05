@@ -53,7 +53,11 @@
         padding: 0;
     }
         
-    
+    .icon {
+    grid-column: 1;  
+    scale: 15%;
+    flex-shrink: 0;
+    }
        
     nav {
         width: 100%;
@@ -66,7 +70,7 @@
     .info {
         display: grid;
         grid-area: info;
-                }
+        }
     
     #explation{    
         display: grid;
@@ -74,20 +78,27 @@
         justify-content: flex-start;
         font-size: 18px;
         padding: 20px;
-        
-    #icon {
-        height: 20px;
-        width: 20px;
-    }
-    
+          
     
     }
     .info h2{
         padding-left: 10px;
     }
-    .info li{      
-        list-style-type: none;
-    }
+    
+    .info li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 7px;
+    margin: 4px 0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 16px;
+    height: 50px;
+
+        }
+
 
 .layout{
 display: grid;
