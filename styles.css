@@ -190,6 +190,10 @@ input, select, button {
     flex-direction: row;
     margin-top: 1em;
     column-gap: 2%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .speakers div{
