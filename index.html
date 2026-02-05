@@ -64,10 +64,47 @@
                                 
         </section>  <!-- info seksjon bunn -->
 
-        <main id="main-content" class="register">
-           <div>
+        
+        <main id="main-content" class="registration">
+        <h2>Register</h2>
+        <form>
+            <fieldset>
+            <legend>Ticket Type</legend>
+            <label><input type="radio" name="ticket" required> Early Bird</label>
+            <label><input type="radio" name="ticket"> Regular</label>
+            <label><input type="radio" name="ticket"> VIP</label>
+            </fieldset>
 
-           </div>
+            <label>
+            Quantity
+            <div class="quantity">
+                <button type="button">−</button>
+                <input type="number" value="2" min="1">
+                <button type="button">+</button>
+            </div>
+            </label>
+
+            <label>Full Name <input type="text" required></label>
+            <label>Email <input type="email" required></label>
+            <label>Company <input type="text"></label>
+
+            <label>
+            Dietary needs
+            <select>
+                <option value="">None</option>
+                <option>Vegetarian</option>
+                <option>Vegan</option>
+                <option>Gluten-free</option>
+            </select>
+            </label>
+
+            <label class="checkbox">
+            <input type="checkbox" required>
+            I agree to the terms *
+            </label>
+
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
         </main>
 
         <aside class="sidebar">
