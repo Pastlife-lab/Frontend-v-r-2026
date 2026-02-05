@@ -1,160 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ted talk</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-        <a href="#main-content" class="skip-link">Hopp til hovedinnhold</a>
-    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Hopp til hovedinnhold</a>
 
     <div class="content-grid">
-        <header class="header"> 
-            <form action="#search" method="get">
-                <input type="search" name="search" placeholder="Søk her">
-                <button type="submit">Søk</button>
-            </form>
-            <nav>
-                <h1 id="overskrift"> TED talks</h1> <!-- Place holder navn -->
-                        <div id="Logo"></div> <!-- Logo her -->
-                    <ul>
-                        <li><a href="#Event" class="hover:underline">Event</a></li>
-                        <li><a href="#Venue" class="hover:underline">Venue</a></li>
-                        <li><a href="#About" class="hover:underline">About</a></li>
-                        <li><a href="#Contact" class="hover:underline">Contact</a></li>
-                    </ul>
-            </nav>
-        </header>
+      <header class="header">
+        <form action="#search" method="get">
+          <input type="search" name="search" placeholder="Søk her" />
+          <button type="submit">Søk</button>
+        </form>
+        <nav>
+          <h1 id="overskrift">TED talks</h1>
+          <!-- Place holder navn -->
+          <div id="Logo"></div>
+          <!-- Logo her -->
+          <ul>
+            <li><a href="#Event" class="hover:underline">Event</a></li>
+            <li><a href="#Venue" class="hover:underline">Venue</a></li>
+            <li><a href="#About" class="hover:underline">About</a></li>
+            <li><a href="#Contact" class="hover:underline">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        <section class="info"> <!-- info seksjon topp -->
-            
-                
-            <h2>Tech Conference 2025</h2>
-                <svg width="100%" height="30" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="100%" height="100%" fill="green" />                    
-                    <circle cx="20" cy="15" r="10" style="fill:white">
-                        <animate 
-                            attributeName="cx"  
-                            begins="0s"
-                            dur="8.9s"
-                            from="130%"
-                            to="-50%"
-                            repeatCount="indefinite" />
-                    </circle>
-                    <text x="60" y="25" font-size="30" text-anchor="middle" fill="red">TED talks
-                        <animate 
-                            attributeName="x"
-                            begins="0s"
-                            dur="9s"
-                            from="-50"
-                            to="130%"
-                            repeatCount="indefinite" />
-                    </text>
-                </svg>                     
-                <ul>    
-                    <li class="explation">Join us for an exciting tech conference featuring industry leaders and innovative speakers.</li>
-                    <li class="date">Date: March 15-17, 2025</li> <li class="location">Location: Oslo Congress Center</li>
-                    <li>12 speakers + more shit and giggles</li> <li class="price">From €299</li>
-                </ul>
-                                
-        </section>  <!-- info seksjon bunn -->
+      <section class="info">
+        <!-- info seksjon topp -->
 
-        
-        <main id="main-content" class="registration">
+        <h2>Tech Conference 2025</h2>
+        <svg width="100%" height="30" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="100%" fill="green" />
+          <circle cx="20" cy="15" r="10" style="fill: white">
+            <animate
+              attributeName="cx"
+              begins="0s"
+              dur="8.9s"
+              from="130%"
+              to="-50%"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <text x="60" y="25" font-size="30" text-anchor="middle" fill="red">
+            TED talks
+            <animate
+              attributeName="x"
+              begins="0s"
+              dur="9s"
+              from="-50"
+              to="130%"
+              repeatCount="indefinite"
+            />
+          </text>
+        </svg>
+        <ul>
+          <li class="explation">
+            Join us for an exciting tech conference featuring industry leaders
+            and innovative speakers.
+          </li>
+          <li>Date: March 15-17, 2025</li>
+          <li>
+            <svg viewbox="0px 0px 20px 20px" xmlns="http://www.w3.org/2000/svg" class="icon">
+              <rect
+                width="20"
+                height="75"
+                x="45"
+                y="75"
+                rx="5"
+                ry="50"
+                style="fill: gray"
+              />
+              <circle
+                cx="55"
+                cy="51"
+                r="30"
+                style="fill: red; stroke: black; stroke-width: 1px"
+              ></circle>
+            </svg>
+            >Location: Oslo Congress Center
+          </li>
+          <li>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+              <circle
+                cx="55"
+                cy="51"
+                r="50"
+                style="fill: gray; stroke: black; stroke-width: 1px"
+              ></circle>
+              <rect
+                width="30"
+                height="75"
+                x="40"
+                y="100"
+                rx="5"
+                ry="5"
+                style="fill: black"
+              /></svg>
+            >12 speakers + more shit and giggles
+          </li>
+          <li>
+            <svg class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 0 0"
+              style="background-color: transparent"
+            >
+              <rect
+                width="175"
+                height="100"
+                x="2"
+                y="2"
+                rx="5"
+                ry="5"
+                style="fill: darkgreen; stroke: black; stroke-width: 2;"
+              />
+              <circle
+                cx="90"
+                cy="51"
+                r="50"
+                style="fill: darkgreen; stroke: black; stroke-width: 1px"
+              ></circle>
+            </svg>
+            >From €299
+          </li>
+        </ul>
+      </section>
+      <!-- info seksjon bunn -->
+
+      <main id="main-content" class="registration">
         <h2>Register</h2>
         <form>
-            <fieldset>
+          <fieldset>
             <legend>Ticket Type</legend>
-            <label><input type="radio" name="ticket" required> Early Bird</label>
-            <label><input type="radio" name="ticket"> Regular</label>
-            <label><input type="radio" name="ticket"> VIP</label>
-            </fieldset>
+            <label
+              ><input type="radio" name="ticket" required /> Early Bird</label
+            >
+            <label><input type="radio" name="ticket" /> Regular</label>
+            <label><input type="radio" name="ticket" /> VIP</label>
+          </fieldset>
 
-            <label>
+          <label>
             Quantity
             <div class="quantity">
-                <button type="button">−</button>
-                <input type="number" value="2" min="1">
-                <button type="button">+</button>
+              <button type="button">−</button>
+              <input type="number" value="2" min="1" />
+              <button type="button">+</button>
             </div>
-            </label>
+          </label>
 
-            <label>Full Name <input type="text" required></label>
-            <label>Email <input type="email" required></label>
-            <label>Company <input type="text"></label>
+          <label>Full Name <input type="text" required /></label>
+          <label>Email <input type="email" required /></label>
+          <label>Company <input type="text" /></label>
 
-            <label>
+          <label>
             Dietary needs
             <select>
-                <option value="">None</option>
-                <option>Vegetarian</option>
-                <option>Vegan</option>
-                <option>Gluten-free</option>
+              <option value="">None</option>
+              <option>Vegetarian</option>
+              <option>Vegan</option>
+              <option>Gluten-free</option>
             </select>
-            </label>
+          </label>
 
-            <label class="checkbox">
-            <input type="checkbox" required>
+          <label class="checkbox">
+            <input type="checkbox" required />
             I agree to the terms *
-            </label>
+          </label>
 
-            <button type="submit" class="submit-btn">Submit Registration</button>
+          <button type="submit" class="submit-btn">Submit Registration</button>
         </form>
-        </main>
+      </main>
 
-        <aside class="sidebar">
-            <section>
-                <h4>About the event</h4>
-                <p>Join 500+ developers for three days of hands-on 
-                    workshops, keynotes, and networking. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </section>
-            <section>
-                <h4>Featured speakers</h4>
-                <div class="speakers"> 
-                    <div class="person">
-                        <input class="fav-toggle" type="checkbox" id="person-1" checked/>
-                        <label class="fav-btn" for="person-1">
-                            <img>
-                            <span class="fav-icon">❤</span>
-                        </label>
-                        <p>Jane</p>
-                    </div>
+      <aside class="sidebar">
+        <section>
+          <h4>About the event</h4>
+          <p>
+            Join 500+ developers for three days of hands-on workshops, keynotes,
+            and networking. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+        </section>
+        <section>
+          <h4>Featured speakers</h4>
+          <div class="speakers">
+            <div class="person">
+              <input class="fav-toggle" type="checkbox" id="person-1" checked />
+              <label class="fav-btn" for="person-1">
+                <img />
+                <span class="fav-icon">❤</span>
+              </label>
+              <p>Jane</p>
+            </div>
 
-                    <div class="person">
-                        <input class="fav-toggle" type="checkbox" id="person-2" />
-                        <label class="fav-btn" for="person-2">
-                            <img>
-                            <span class="fav-icon">❤</span>
-                        </label>
-                        <p>John</p>
-                    </div>
+            <div class="person">
+              <input class="fav-toggle" type="checkbox" id="person-2" />
+              <label class="fav-btn" for="person-2">
+                <img />
+                <span class="fav-icon">❤</span>
+              </label>
+              <p>John</p>
+            </div>
 
-                    <div class="person">
-                        <input class="fav-toggle" type="checkbox" id="person-3" />
-                        <label class="fav-btn" for="person-3">
-                            <img>
-                            <span class="fav-icon">❤</span>
-                        </label>
-                        <p>Anna</p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h4>Schedule highlights</h4>
-                <ul>
-                    <li>Lorem ipsum dolor </li>
-                    <li>sit amet, consectetur </li>
-                    <li>consectetur adipiscing</li>
-                    <li>elit sed do eiusmod</li>
-                </ul>
-            </section>
-            <a href="schedule.html" class="hover:underline">Full agenda her</a>
-        </aside>
-        <footer class="footer">footer</footer>
+            <div class="person">
+              <input class="fav-toggle" type="checkbox" id="person-3" />
+              <label class="fav-btn" for="person-3">
+                <img />
+                <span class="fav-icon">❤</span>
+              </label>
+              <p>Anna</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h4>Schedule highlights</h4>
+          <ul>
+            <li>Lorem ipsum dolor</li>
+            <li>sit amet, consectetur</li>
+            <li>consectetur adipiscing</li>
+            <li>elit sed do eiusmod</li>
+          </ul>
+        </section>
+        <a href="schedule.html" class="hover:underline">Full agenda her</a>
+      </aside>
+      <footer class="footer">footer</footer>
     </div>
-
-
-</body>
+  </body>
 </html>
