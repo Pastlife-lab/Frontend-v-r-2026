@@ -1,5 +1,8 @@
     :root{
         --font-stack: Arial, Helvetica, sans-serif;
+        --heading-color: rgb(255, 0, 0);
+        --header-background-color: #1e6614;
+        --button-color: #007BFF;
     }
     
     .skip-link {
@@ -22,7 +25,7 @@
 
     header {
     display: flex;
-    background-color: #1e6614;
+    background-color: var(--header-background-color);
     justify-items: center;
     padding: 20px;
     text-align: center;
@@ -33,7 +36,7 @@
     
 
     #overskrift {
-        color: rgb(255, 0, 0);
+        color: var(--heading-color);
         margin: 0;
         padding: 0;
     }
@@ -105,12 +108,12 @@ display: grid;
 grid-template-columns: 10fr 12fr;
 grid-template-rows: auto 
                     4fr 
-                    16fr 
-                    2fr;
+                    6.5fr 
+                    1fr;
 grid-template-areas: "header header"
-                        "info info"
-                        "register sidebar"
-                        "footer footer";
+                    "info info"
+                    "register sidebar"
+                    "footer footer";
 min-height: 100vh;
 }
 
@@ -135,7 +138,7 @@ min-height: 100vh;
   }
   button {
     padding: 8px 8px;
-    background-color: #007BFF;
+    background-color: var(--button-color);
     color: white;
     border: none;
     border-radius: 4px;
@@ -230,6 +233,11 @@ input, select, button {
     transition: transform 0.3s ease, border-color 0.3s ease; 
 }
 
+.person:focus-within:has(input:focus-visible) {
+    background-color: lightgray;
+    outline: 2px solid #666;
+}
+
 .speakers div:active{
     background-color: darkgray;
 }
@@ -291,7 +299,6 @@ input, select, button {
             gap: 20px;
         }
     }
-
 
     @media screen and (max-width: 768px){
         .layout{
